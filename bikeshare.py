@@ -8,7 +8,7 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-
+# to get filters necessary to analyze data
 def get_filters():
     """
     Asks user to specify a city, month, and day to analyze.
@@ -45,7 +45,7 @@ def get_filters():
     print('-'*40)
     return city, month, day
 
-
+# To load data from data files and add necessary columns
 def load_data(city, month, day):
     """
     Loads data for the specified city and filters by month and day if applicable.
@@ -90,7 +90,7 @@ def load_data(city, month, day):
 
     return df
 
-
+# To find time based statistics
 def time_stats(df):
     """Displays statistics on the most frequent times of travel."""
 
@@ -110,7 +110,7 @@ def time_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# To find station based statistics
 def station_stats(df):
     """Displays statistics on the most popular stations and trip."""
 
@@ -130,7 +130,7 @@ def station_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# To compute time based statistics
 def trip_duration_stats(df):
     """Displays statistics on the total and average trip duration."""
 
@@ -146,7 +146,7 @@ def trip_duration_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# To find user based statistics
 def user_stats(df):
     """Displays statistics on bikeshare users."""
 
@@ -187,7 +187,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-
+# To display raw data from data files used
 def display_raw(df):
     """Displays 5 rows of the dataframe used for the analysis"""
 
