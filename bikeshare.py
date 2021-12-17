@@ -22,7 +22,7 @@ def get_filters():
     # get user input for city (chicago, new york city, washington). While loop used to handle invalid input
     while True:
         city = str.lower(input('Which city would you like to get data from? Chicago, New York City or Washington?: '))
-        if city.lower() not in ('chicago', 'washington', 'new york city'):
+        if city not in ('chicago', 'washington', 'new york city'):
             print('Sorry, that is not a valid city. Try again!')
         else:
             break
@@ -30,7 +30,7 @@ def get_filters():
     # get user input for month (all, january, february, ... , june)
     while True:
         month = str.lower(input('Should the data be for all months or a specific month(January to June)?  '))
-        if month.lower() not in ('all', 'january', 'february', 'march', 'april', 'may', 'june'):
+        if month not in ('all', 'january', 'february', 'march', 'april', 'may', 'june'):
             print('Sorry, that is not a valid month. Try again!')
         else:
             break
