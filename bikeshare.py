@@ -204,11 +204,11 @@ def display_raw(df):
                     start_loc += 5
                     end_loc += 5
                 elif user_input == 'no':
-                    print('That is the end of code')
+                    print('That is the end of code. Thanks for your time')
                     break
             break
         elif user_input == 'no':
-            print('That is the end of the code')
+            print('That is the end of the code. Thanks for your time')
             break
 
 def main():
